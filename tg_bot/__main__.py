@@ -138,7 +138,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="❤️ ADD ME TO YOUR GROUP ❤️", url="t.me/{}?startgroup=true".format(bot.username)),
                      [InlineKeyboardButton(text="❤️ NEWS CHANNEL ❤️", url="https://t.me/MissYouNews"), 
-                     [InlineKeyboardButton(text="❤️ MY CREATER ❤️", url="https://t.me/Om_Varade")
+                     [InlineKeyboardButton(text="❤️ MY CREATER ❤️", url="https://t.me/Om_Varade"))]]
 
     else:
         update.effective_message.reply_text("I AM ACTIVE ❤️...")
