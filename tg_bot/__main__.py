@@ -19,7 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-HELLO DEAR [❤️❤️](tg://user?id={}) IF YOU NEED ANY HELP THAN USER THIS /help .
+ʜᴇʏ ɪ ᴀᴍ ᴍɪss ʏᴏᴜ ʙᴏᴛ 🤗 ɪғ ʏᴏᴜ ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ ᴜsᴇᴅ ᴛʜɪs /help .
 
 """
 
@@ -136,9 +136,9 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="❤️ ADD ME TO YOUR GROUP ❤️", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://youtu.be/W6CLKrehy6w")],
-                     [InlineKeyboardButton(text="❤️ NEWS CHANNEL ❤️", url="https://t.me/MissYouNews"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/Mo_Tech_YT")],
-                     [InlineKeyboardButton(text="❤️ MY CREATER ❤️", url="https://t.me/Om_Varade"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="❤️ ADD ME TO YOUR GROUP ❤️", url="t.me/{}?startgroup=true".format(bot.username)),
+                     [InlineKeyboardButton(text="❤️ NEWS CHANNEL ❤️", url="https://t.me/MissYouNews"), 
+                     [InlineKeyboardButton(text="❤️ MY CREATER ❤️", url="https://t.me/Om_Varade")
 
     else:
         update.effective_message.reply_text("I AM ACTIVE ❤️...")
